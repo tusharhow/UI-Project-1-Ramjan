@@ -641,7 +641,7 @@ class EmployerProject extends StatelessWidget {
             padding:
                 const EdgeInsets.symmetric(horizontal: defaultPadding * 1.5),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: const [
                 Text(
                   'Project Code',
@@ -657,7 +657,7 @@ class EmployerProject extends StatelessWidget {
             padding:
                 const EdgeInsets.symmetric(horizontal: defaultPadding * 1.5),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: const [
                 Text(
                   '30446337',

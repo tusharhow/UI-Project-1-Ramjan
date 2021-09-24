@@ -15,6 +15,9 @@ class HomePageSecond extends StatelessWidget {
             clipBehavior: Clip.none,
             children: [
               Container(
+                height: _size.height,
+              ),
+              Container(
                 height: _size.height / 2.5,
                 width: _size.width,
                 decoration: const BoxDecoration(

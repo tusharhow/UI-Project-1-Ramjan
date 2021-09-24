@@ -15,6 +15,9 @@ class HomePageFirst extends StatelessWidget {
             clipBehavior: Clip.none,
             children: [
               Container(
+                height: _size.height,
+              ),
+              Container(
                 height: _size.height / 2.5,
                 width: _size.width,
                 decoration: const BoxDecoration(
@@ -104,7 +107,6 @@ class HomePageFirst extends StatelessWidget {
                 top: 260,
                 left: 35,
                 child: Container(
-                  height: _size.height,
                   width: _size.width / 1.22,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -354,10 +356,110 @@ class HomePageFirst extends StatelessWidget {
                           children: [
                             Row(
                               children: const [
-                                Text('Done',
-                                    style: TextStyle(
-                                        color: Color(0xff43D1D1),
-                                        fontSize: 13)),
+                                Text(
+                                  'Done',
+                                  style: TextStyle(
+                                      color: Color(0xff43D1D1), fontSize: 13),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Design a WordPress website for fast',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              children: const [
+                                Text(
+                                  '4,000 SAR paid',
+                                  style: TextStyle(
+                                      fontSize: 11, color: Colors.black54),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: Colors.white, width: 1),
+                                    image: DecorationImage(
+                                      colorFilter: ColorFilter.mode(
+                                          Colors.white54.withOpacity(0.44),
+                                          BlendMode.dstATop),
+                                      image: const AssetImage(
+                                          'images/person1.png'),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: Colors.white, width: 1),
+                                    image: DecorationImage(
+                                      colorFilter: ColorFilter.mode(
+                                          Colors.white54.withOpacity(0.44),
+                                          BlendMode.dstATop),
+                                      image: const AssetImage(
+                                          'images/person2.png'),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text(
+                                      '60 Bids',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 120,
+                                    ),
+                                    Icon(Icons.star,
+                                        size: 7, color: Colors.orange),
+                                    Icon(Icons.star,
+                                        size: 7, color: Colors.orange),
+                                    Icon(Icons.star,
+                                        size: 7, color: Colors.orange),
+                                  ],
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Row(
+                              children: const [
+                                Text(
+                                  'Done',
+                                  style: TextStyle(
+                                      color: Color(0xff43D1D1), fontSize: 13),
+                                ),
                               ],
                             ),
                             const SizedBox(
